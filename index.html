@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aplicativo - Notícias - CRUD</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="js/app.js" defer></script>
+</head>
+
+<body>
+
+  <section class="section">
+    <div class="container">
+
+      <div class="row">
+        <div class="col 4">
+
+     
+
+      <h1>
+       Notícias 
+      </h1>
+      <hr>
+      <br>
+      <div class="field">
+        <label>Notícia</label>
+        <div class="control">
+          <textarea class="textarea is-info" required id="noticia" placeholder="Digite aqui sua notícia"></textarea>
+        </div>
+      </div>
+      <div class="field is-grouped is-grouped-centered">
+        <div class="control">
+          <button class="button is-link" id="btnCadastrarNoticia">
+            <span>Nova Notícia</span>
+            <span class="icon is-small">
+              <i class="fas fa-newspaper"></i>
+            </span>
+          </button>
+        </div>
+        <div class="control">
+          <button class="button is-link" id="btnEditarNoticia">
+             <span>Salvar Edição</span>
+             <span class="icon is-small">
+               <i class="fas fa-save"></i>
+             </span>
+           </button>
+        </div>
+      </div>
+      <div class="control is-pulled-right">
+        <button class="button is-link is-danger" id="btnDeletar">
+          <span>Limpar notícias</span>
+          <span class="icon is-small">
+            <i class="fas fa-trash"></i>
+          </span>
+        </button>
+      </div>
+    </div>
+    
+    
+  </section>
+</div>
+<div class="col 8">
+  <section class="section">
+
+    <div class="container">
+      <h2 class="title" id="tituloNoticias">
+         <span id="qtdNoticias"></span> notícia(s)
+      </h2>
+      <hr>
+      <div id="mostrarNoticias">
+      </div>
+    </div>
+
+  </section>
+</div>
+  
+</div>
+
+
+</body>
+
+</html>
